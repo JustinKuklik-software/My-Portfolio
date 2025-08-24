@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="/">Justin Kuklik</a>
+      </div>
+
+      <div class="right">
+        <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+
+        <a href="mailto:john@example.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <!-- SECTION 1: Hero -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hi, I’m Justin 👋</h2>
+          <p>
+           I’m a 9th-grade student in Zurich with a strong passion for technology and web development. I enjoy learning new programming languages, exploring innovative tools, and creating interactive, responsive websites. Programming and problem-solving excite me, and I like turning creative ideas into real projects. I am always eager to improve my skills, experiment with new frameworks, and take on challenges that help me grow as a developer and expand my knowledge in the digital world.
+          </p>
+        </div>
+
+        <div class="headshot">
+          <img src="images/Photo_Justin.JPG" alt="john doe headshot" />
+        </div>
+      </section>
+      
+      <!-- SECTION 2: Skills -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <p class="text">
+          Click a folder to view my certificates and see my skills in action!
+        </p>
+
+        <div class="cells">
+          <!-- HTML Folder -->
+          <div
+            class="cell"
+            onclick="toggleCertificates('html-certs', this, event)"
+          >
+            <div class="folder-header">
+              <i class="fa-solid fa-chevron-right folder-icon"></i>
+              <img src="images/html-logo.webp" alt="html logo" />
+              <span>HTML</span>
+            </div>
+            <div id="html-certs" class="certificates">
+              <div class="certificate-item">
+                <a href="images/Certifikate_HTML.webp" target="_blank">
+                  <img
+                    src="images/Certifikate_HTML.webp"
+                    alt="HTML Zertifikat"
+                  />
+                </a>
+                <span>Introduction to HTML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS Folder -->
+          <div
+            class="cell"
+            onclick="toggleCertificates('css-certs', this, event)"
+          >
+            <div class="folder-header">
+              <i class="fa-solid fa-chevron-right folder-icon"></i>
+              <img src="images/css-logo.webp" alt="css logo" />
+              <span>CSS</span>
+            </div>
+            <div id="css-certs" class="certificates">
+              <div class="certificate-item">
+                <a href="images/Certifikate_CSS.webp" target="_blank">
+                  <img src="images/Certifikate_CSS.webp" alt="CSS Zertifikat" />
+                </a>
+                <span>Introduction to CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Folder -->
+          <div
+            class="cell"
+            onclick="toggleCertificates('ai-certs', this, event)"
+          >
+            <div class="folder-header">
+              <i class="fa-solid fa-chevron-right folder-icon"></i>
+              <i class="fa-solid fa-robot"></i>
+              <span>AI</span>
+            </div>
+            <div id="ai-certs" class="certificates">
+              <div class="certificate-item">
+                <a href="images/Certifikate_AI-Data.webp" target="_blank">
+                  <img
+                    src="images/Certifikate_AI-Data.webp"
+                    alt="AI Data Analysis"
+                  />
+                </a>
+                <span>AI Data Analysis</span>
+              </div>
+              <div class="certificate-item">
+                <a href="images/Certifikate_AI-Visualize.webp" target="_blank">
+                  <img
+                    src="images/Certifikate_AI-Visualize.webp"
+                    alt="AI Visualize"
+                  />
+                </a>
+                <span>AI Visualize your Data</span>
+              </div>
+              <div class="certificate-item">
+                <a href="images/Certifikate_AI-Think.webp" target="_blank">
+                  <img
+                    src="images/Certifikate_AI-Think.webp"
+                    alt="Think with AI"
+                  />
+                </a>
+                <span>Think with AI</span>
+              </div>
+              <div class="certificate-item">
+                <a
+                  href="images/Certifikate_Promt-Engineering.webp"
+                  target="_blank"
+                >
+                  <img
+                    src="images/Certifikate_Promt-Engineering.webp"
+                    alt="Prompt Engineering"
+                  />
+                </a>
+                <span>Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Folder -->
+          <div
+            class="cell"
+            onclick="toggleCertificates('other-certs', this, event)"
+          >
+            <div class="folder-header">
+              <i class="fa-solid fa-chevron-right folder-icon"></i>
+              <i class="fa-solid fa-file"></i>
+              <span>Other</span>
+            </div>
+            <div id="other-certs" class="certificates">
+              <div class="certificate-item">
+                <a href="images/Certifikate_Udemy.webp" target="_blank">
+                  <img
+                    src="images/Certifikate_Udemy.webp"
+                    alt="Other Certificate"
+                  />
+                </a>
+                <span>Other Certificate</span>
+              </div>
+              <div class="certificate-item">
+                <a href="images/Certifikate_Tech.webp" target="_blank">
+                  <img
+                    src="images/Certifikate_Tech.webp"
+                    alt="Tech for Everyone"
+                  />
+                </a>
+                <span>Tech for Everyone</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
